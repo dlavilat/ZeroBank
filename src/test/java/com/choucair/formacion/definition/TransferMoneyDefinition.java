@@ -30,10 +30,10 @@ public class TransferMoneyDefinition {
 		transferMoney.ingresarTransferFunds();
 	}
 
-	@When("^Diligencio los datos del formulario \"([^\"]*)\",\"([^\"]*)\",(\\d+),\"([^\"]*)\"$")
-	public void diligencio_los_datos_del_formulario_Loan_Credit_Card_descripion(String strFromAccount, String strToAccount, int intAmount, String strDescription) {
+	@When("^Diligencio los datos del formulario \"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\"$")
+	public void diligencio_los_datos_del_formulario_Loan_Credit_Card_descripion(String strFromAccount, String strToAccount, String strAmount, String strDescription) {
 		System.out.println("from "+strFromAccount);
-		transferMoney.ingresarDatos(strFromAccount,strToAccount,intAmount,strDescription);
+		transferMoney.ingresarDatos(strFromAccount,strToAccount,strAmount,strDescription);
 	}
 
 	@When("^Presiono la opción continuar$")
@@ -49,6 +49,11 @@ public class TransferMoneyDefinition {
 	@Then("^La transacción es satisfactoria$")
 	public void la_transacción_es_satisfactoria()  {
 		transferMoney.confirmarEnvio();
+	}
+	
+	@Then("^No se envia a verificacion$")
+	public void no_se_envia_a_verificacion() {
+		transferMoney.validarPageTransfer();
 	}
 
 }

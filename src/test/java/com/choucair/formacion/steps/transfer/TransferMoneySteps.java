@@ -4,6 +4,7 @@ import com.choucair.formacion.pageobjects.transfer.VerifyTransferPage;
 import com.choucair.formacion.pageobjects.transfer.ConfirmTransferPage;
 import com.choucair.formacion.pageobjects.transfer.TransferMoneyPage;
 
+import net.serenitybdd.screenplay.waits.WaitUntil;
 import net.thucydides.core.annotations.Step;
 
 public class TransferMoneySteps {
@@ -18,7 +19,8 @@ public class TransferMoneySteps {
 	}
 	
 	@Step
-	public void ingresarDatos(String strFromAccount,String strToAccount, int strAmount, String strDescription) {
+	public void ingresarDatos(String strFromAccount,String strToAccount, String strAmount, String strDescription) {
+		transferMoney.validarPage();
 		transferMoney.selectFromAccount(strFromAccount);
 		transferMoney.selectToAccount(strToAccount);
 		transferMoney.ingresarAmount(strAmount);
@@ -39,5 +41,11 @@ public class TransferMoneySteps {
 	@Step
 	public void confirmarEnvio() {
 		confirmTransfer.validarPagina();
+	}
+	
+	@Step
+	public void validarPageTransfer() {
+		
+		transferMoney.validarPage();
 	}
 }
