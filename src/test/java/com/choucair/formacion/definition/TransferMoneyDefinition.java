@@ -3,7 +3,7 @@ package com.choucair.formacion.definition;
 import java.util.List;
 
 import com.choucair.formacion.steps.LoginSteps;
-import com.choucair.formacion.steps.TransferMoneySteps;
+import com.choucair.formacion.steps.transfer.TransferMoneySteps;
 
 import cucumber.api.DataTable;
 import cucumber.api.java.en.Given;
@@ -33,22 +33,22 @@ public class TransferMoneyDefinition {
 	@When("^Diligencio los datos del formulario \"([^\"]*)\",\"([^\"]*)\",(\\d+),\"([^\"]*)\"$")
 	public void diligencio_los_datos_del_formulario_Loan_Credit_Card_descripion(String strFromAccount, String strToAccount, int intAmount, String strDescription) {
 		System.out.println("from "+strFromAccount);
-		transferMoney.ingresarDatos(strFromAccount,strToAccount,intAmount);
+		transferMoney.ingresarDatos(strFromAccount,strToAccount,intAmount,strDescription);
 	}
 
 	@When("^Presiono la opción continuar$")
 	public void presiono_la_opción_continuar() {
-		
+		transferMoney.continuar();
 	}
 
 	@When("^Envió la verificación de la transaccion$")
 	public void envió_la_verificación_de_la_transaccion() {
-		
+		transferMoney.verificarTransaccion();
 	}
 
 	@Then("^La transacción es satisfactoria$")
 	public void la_transacción_es_satisfactoria()  {
-		
+		transferMoney.confirmarEnvio();
 	}
 
 }
