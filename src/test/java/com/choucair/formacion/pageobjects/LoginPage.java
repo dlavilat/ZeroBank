@@ -11,25 +11,25 @@ import static org.hamcrest.Matchers.containsString;
 public class LoginPage extends PageObject {
 
 	@FindBy(id="user_login")
-	public WebElementFacade txtLogin;
+	private WebElementFacade txtLogin;
 	
 	@FindBy(id="user_password")
-	public WebElementFacade txtPassword;
+	private WebElementFacade txtPassword;
 	
 	@FindBy(name="submit")
-	public WebElementFacade btnSignIn;
+	private WebElementFacade btnSignIn;
 	
 	@FindBy(id="details-button")
-	public WebElementFacade btnAvanzado;
+	private WebElementFacade btnAvanzado;
 	
 	@FindBy(id="proceed-link")
-	public WebElementFacade lnkContinuar;		
+	private WebElementFacade lnkContinuar;		
 	
 	@FindBy(xpath="/html/body/div[1]/div[2]/div/div[2]/div/div/h2[1]")
-	public WebElementFacade lblTituloHomePage;
+	private WebElementFacade lblTituloHomePage;
 	
 	@FindBy(xpath="//*[@id=\"login_form\"]/div[1]")
-	public WebElementFacade lblError;
+	private WebElementFacade lblError;
 	
 	public void ingresarDatos(String strUser, String strPassword) {
 		txtLogin.sendKeys(strUser);

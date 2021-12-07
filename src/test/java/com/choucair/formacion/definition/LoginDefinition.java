@@ -18,7 +18,7 @@ public class LoginDefinition {
 	}
 
 	@When("^Diligencio los campos (.*) y (.*)$")
-	public void diligencio_los_campos_correctos(String strUser, String strPassword) {
+	public void diligencio_los_campos(String strUser, String strPassword) {
 		loginSteps.login(strUser, strPassword);
 	}
 

@@ -1,7 +1,6 @@
 package com.choucair.formacion.pageobjects.payBills;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotEquals;
 
 import org.openqa.selenium.Keys;
@@ -14,24 +13,27 @@ import net.serenitybdd.core.pages.WebElementFacade;
 public class PaySavedPayeePage extends PageObject {
 	
 
-	public WebElementFacade optPayee;
+	private WebElementFacade optPayee;
 	
-	public WebElementFacade optAccount;
+	private WebElementFacade optAccount;
 	
 	@FindBy(id="sp_amount")
-	public WebElementFacade txtAmount;
+	private WebElementFacade txtAmount;
 	
 	@FindBy(id="sp_date")
-	public WebElementFacade txtDate;
+	private WebElementFacade txtDate;
 	
 	@FindBy(id="sp_description")
-	public WebElementFacade txtDescription;
+	private WebElementFacade txtDescription;
 	
 	@FindBy(id="pay_saved_payees")
-	public WebElementFacade btnPay;
+	private WebElementFacade btnPay;
 	
 	@FindBy(xpath="//*[@id=\"alert_content\"]/span")
-	public WebElementFacade lblRespuesta;
+	private WebElementFacade lblRespuesta;
+	
+	@FindBy(xpath="//*[@id=\"ui-tabs-1\"]/h2")
+	private WebElementFacade lblTituloPagina;
 	
 	public void ingresarPayee(String strPayee) {
 		optPayee = element(By.xpath("//select[@id='sp_payee']/child::option[contains(text(),'"+strPayee+"')]"));
@@ -64,6 +66,12 @@ public class PaySavedPayeePage extends PageObject {
 	
 	public void clicBtnPay() {
 		btnPay.click();
+	}
+	
+	public void validarPaginaPaySaved() {
+		String lblTexto= "Make payments to your saved payees";
+		String strMensaje= lblTituloPagina.getText();
+		assertEquals(lblTexto, strMensaje);
 	}
 	
 	public void validarPagoExitoso() {

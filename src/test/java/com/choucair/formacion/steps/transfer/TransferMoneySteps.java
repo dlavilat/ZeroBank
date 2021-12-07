@@ -1,6 +1,7 @@
 package com.choucair.formacion.steps.transfer;
 
 import com.choucair.formacion.pageobjects.transfer.VerifyTransferPage;
+
 import com.choucair.formacion.pageobjects.MenuPage;
 import com.choucair.formacion.pageobjects.transfer.ConfirmTransferPage;
 import com.choucair.formacion.pageobjects.transfer.TransferMoneyPage;

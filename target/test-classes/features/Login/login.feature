@@ -1,5 +1,7 @@
 #Autor: davilat@choucairtesting.com
+#Fecha: Dic-3-2021
 
+@Regresion
 @Login
   Feature: Ingreso de Login
     Como usuario debo ingresar a la aplicacion a través del diligenciamiento de credenciales

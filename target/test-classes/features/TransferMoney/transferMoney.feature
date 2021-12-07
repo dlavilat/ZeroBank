@@ -1,6 +1,7 @@
 #Autor: davilat@choucairtesting.com
 #Fecha: Dic-3-2021
 
+@Regresion
 @TransferMoney
 Feature: Transferencia de dinero
   Como usuario puedo realizar transferencias y pagos desde cualquiera de mis cuentas
@@ -13,7 +14,7 @@ Feature: Transferencia de dinero
   @Caso1
   Scenario Outline: Cuenta de origen con saldo y el monto a enviar sea positivo
     Given Me dirijo a la opción Transfer Funds
-    When Diligencio los datos del formulario <from>,<to>,<amount>,<description>
+    When Diligencio los datos del formulario transferencia <from>,<to>,<amount>,<description>
     And Presiono la opción continuar
     And Envió la verificación de la transaccion
     Then La transacción es satisfactoria
@@ -26,7 +27,7 @@ Feature: Transferencia de dinero
   @Caso2
   Scenario Outline: Cuenta de origen con saldo y el monto a enviar sea negativo
     Given Me dirijo a la opción Transfer Funds
-    When Diligencio los datos del formulario <from>,<to>,<amount>,<description>
+    When Diligencio los datos del formulario transferencia <from>,<to>,<amount>,<description>
     And Presiono la opción continuar
     Then No se envia a verificacion
     
@@ -38,7 +39,7 @@ Feature: Transferencia de dinero
   @Caso3
   Scenario Outline: Cuenta de origen con saldo y el monto a enviar sea 0
     Given Me dirijo a la opción Transfer Funds
-    When Diligencio los datos del formulario <from>,<to>,<amount>,<description>
+    When Diligencio los datos del formulario transferencia <from>,<to>,<amount>,<description>
     And Presiono la opción continuar
     Then No se envia a verificacion
     

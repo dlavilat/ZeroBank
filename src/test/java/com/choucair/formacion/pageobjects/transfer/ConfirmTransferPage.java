@@ -10,7 +10,7 @@ import net.serenitybdd.core.pages.WebElementFacade;
 public class ConfirmTransferPage extends PageObject{
 	
 	@FindBy(xpath="//*[@id=\"transfer_funds_content\"]/div/div/div[1]")
-	public WebElementFacade lblConfirm;
+	private WebElementFacade lblConfirm;
 	
 	public void validarPagina() {
 		String lblTexto = "You successfully submitted your transaction.";

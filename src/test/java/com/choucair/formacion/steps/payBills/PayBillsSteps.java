@@ -14,6 +14,7 @@ public class PayBillsSteps {
 	
 	public void ingresarDatos(String strPayee, String strAcount, String strAmount, 
 							  String strDate, String strDescription) {
+		paySavedPayeePage.validarPaginaPaySaved();
 		paySavedPayeePage.ingresarPayee(strPayee);
 		paySavedPayeePage.ingresarAcount(strAcount);
 		paySavedPayeePage.ingresarAmount(strAmount);

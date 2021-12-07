@@ -9,21 +9,21 @@ import net.serenitybdd.core.pages.WebElementFacade;
 
 public class TransferMoneyPage extends PageObject{
 	
-	public WebElementFacade optFromAccount;
+	private WebElementFacade optFromAccount;
 	
-	public WebElementFacade optToAccount;
+	private WebElementFacade optToAccount;
 	
 	@FindBy(id="tf_amount")
-	public WebElementFacade txtAmount;
+	private WebElementFacade txtAmount;
 	
 	@FindBy(id="tf_description")
-	public WebElementFacade txtDescription;
+	private WebElementFacade txtDescription;
 	
 	@FindBy(id="btn_submit")
-	public WebElementFacade btnContinue;
+	private WebElementFacade btnContinue;
 	
 	@FindBy(xpath="//*[@id=\"transfer_funds_content\"]/form/div/div/h2")
-	public WebElementFacade lblPageTransfer;
+	private WebElementFacade lblPageTransfer;
 	
 	public void selectFromAccount(String strFromAccount) {
 		optFromAccount = element(By.xpath("//select[@id='tf_fromAccountId']/child::option[contains(text(),'"+strFromAccount+"')]"));

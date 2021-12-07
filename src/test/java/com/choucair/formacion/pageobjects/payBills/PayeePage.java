@@ -1,5 +1,6 @@
 package com.choucair.formacion.pageobjects.payBills;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
@@ -10,22 +11,25 @@ import net.serenitybdd.core.pages.WebElementFacade;
 public class PayeePage extends PageObject {
 	
 	@FindBy(id="np_new_payee_name")
-	public WebElementFacade txtName;
+	private WebElementFacade txtName;
 	
 	@FindBy(id="np_new_payee_address")
-	public WebElementFacade txtAddress;
+	private WebElementFacade txtAddress;
 	
 	@FindBy(id="np_new_payee_account")
-	public WebElementFacade txtAccount;
+	private WebElementFacade txtAccount;
 	
 	@FindBy(id="np_new_payee_details")
-	public WebElementFacade txtDetails;
+	private WebElementFacade txtDetails;
 	
 	@FindBy(id="add_new_payee")
-	public WebElementFacade btnAdd;
+	private WebElementFacade btnAdd;
 	
 	@FindBy(id="alert_content")
-	public WebElementFacade lblMensaje;
+	private WebElementFacade lblMensaje;
+	
+	@FindBy(xpath="//*[@id=\"ui-tabs-2\"]/h2")
+	private WebElementFacade lblTituloPagina;
 	
 	public void ingresarName(String strName) {
 		txtName.click();
@@ -68,6 +72,12 @@ public class PayeePage extends PageObject {
 	
 	public void validarDivNoExitoso() {
 		assertFalse(lblMensaje.isDisplayed());
+	}
+	
+	public void validarPaginaPayee() {
+		String lblTexto= "Who are you paying?";
+		String strMensaje= lblTituloPagina.getText();
+		assertEquals(lblTexto, strMensaje);
 	}
 
 }

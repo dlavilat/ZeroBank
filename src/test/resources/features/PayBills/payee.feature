@@ -1,6 +1,7 @@
 #Autor: davilat@choucairtesting.com
 #Fecha: Dic-7-2021
 
+@Regresion
 @Payee
 Feature: Crear un nuevo Beneficiario
   Como usuario puedo crear nuevos beneficiarios para pagar facturas

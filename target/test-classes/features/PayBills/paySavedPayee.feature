@@ -1,6 +1,7 @@
 #Autor: davilat@choucairtesting.com
 #Fecha: Dic-6-2021
 
+@Regresion
 @PaySavedPayee
 Feature: Realizar pagos a los beneficiarios
   Como usuario puedo realizar pagos a los beneficiarios inscritos, con cualquiera de las cuentas.

@@ -14,6 +14,7 @@ public class PayeeSteps {
 	}
 	
 	public void ingresarDatos(String strName, String strAddress, String strAccount, String strDetails) {
+		payeePage.validarPaginaPayee();
 		payeePage.ingresarDatos(strName, strAddress, strAccount, strDetails);
 	}
 	
@@ -28,4 +29,5 @@ public class PayeeSteps {
 	public void validarCreacionNoExitoso() {
 		payeePage.validarDivNoExitoso();
 	}
+	
 }

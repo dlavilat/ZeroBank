@@ -30,9 +30,8 @@ public class TransferMoneyDefinition {
 		transferMoney.ingresarTransferFunds();
 	}
 
-	@When("^Diligencio los datos del formulario \"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\"$")
-	public void diligencio_los_datos_del_formulario_Loan_Credit_Card_descripion(String strFromAccount, String strToAccount, String strAmount, String strDescription) {
-		System.out.println("from "+strFromAccount);
+	@When("^Diligencio los datos del formulario transferencia \"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\"$")
+	public void diligencio_los_datos_del_formulario_transferencia(String strFromAccount, String strToAccount, String strAmount, String strDescription) {
 		transferMoney.ingresarDatos(strFromAccount,strToAccount,strAmount,strDescription);
 	}
 
