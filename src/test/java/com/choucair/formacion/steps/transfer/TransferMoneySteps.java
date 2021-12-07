@@ -1,21 +1,22 @@
 package com.choucair.formacion.steps.transfer;
 
 import com.choucair.formacion.pageobjects.transfer.VerifyTransferPage;
+import com.choucair.formacion.pageobjects.MenuPage;
 import com.choucair.formacion.pageobjects.transfer.ConfirmTransferPage;
 import com.choucair.formacion.pageobjects.transfer.TransferMoneyPage;
 
-import net.serenitybdd.screenplay.waits.WaitUntil;
 import net.thucydides.core.annotations.Step;
 
 public class TransferMoneySteps {
 	
+	MenuPage menuPage;
 	TransferMoneyPage transferMoney;
 	VerifyTransferPage verifyTransferPage;
 	ConfirmTransferPage confirmTransfer;
 	
 	@Step
 	public void ingresarTransferFunds() {
-		transferMoney.clicTransfer();
+		menuPage.clicTransfer();
 	}
 	
 	@Step
@@ -44,8 +45,7 @@ public class TransferMoneySteps {
 	}
 	
 	@Step
-	public void validarPageTransfer() {
-		
+	public void validarPageTransfer() {		
 		transferMoney.validarPage();
 	}
 }

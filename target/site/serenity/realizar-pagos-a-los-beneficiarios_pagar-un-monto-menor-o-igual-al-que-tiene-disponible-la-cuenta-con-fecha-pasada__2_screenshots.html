@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+<![endif]--><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script><link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">Proyecto base para Automatización</span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="feature_pay_saved_payee_sl_realizar_pagos_a_los_beneficiarios.html">Realizar Pagos A Los Beneficiarios</a></span>
+                > <span class="truncate-60"><a
+                    href="realizar-pagos-a-los-beneficiarios_pagar-un-monto-menor-o-igual-al-que-tiene-disponible-la-cuenta-con-fecha-pasada__2.html">Pagar un monto menor o igual al que tiene disponible la cuenta con fecha pasada </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="requirement_type_capability.html"><i class="fa fa-comments-o"></i> Capabilities</a>
+        </li>
+        <li >
+            <a href="requirement_type_feature.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 07-12-2021 08:44</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Realizar Pagos A Los Beneficiarios </span>
+                                    <span class="badge tag-badge">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                Como usuario puedo realizar pagos a los beneficiarios inscritos, con cualquiera de las cuentas.
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" href="tag_paysavedpayee.html">Paysavedpayee
+                                    (tag)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" href="capability_pay_saved_payee.html">Pay Saved Payee
+                                    (capability)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" href="tag_caso3.html">Caso3
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-times-circle failure-icon fa-3x' title='FAILURE'></i></span>
+                            <span class="test-case-title">
+                                <span class="failing-color">Pagar Un Monto Menor O Igual Al Que Tiene Disponible La Cuenta Con Fecha Pasada
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given Me dirijo a la opcion Pay Bills<br>When Diligencio los datos del formulario &lt;payee&gt;,&lt;account&gt;,&lt;amount&gt;,&lt;date&gt;,&lt;description&gt;<br>And Presiono la opcion pay<br>Then El pago no es satisfactorio<br></div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+                <div class="panel-heading"><span class='error-caption ellipsis'>FAILURE: Assertion error: Values should be dif...</span></div>
+                <div class="panel-body">
+                    <a href="pagesource2551830861185265246.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="62357d9d9b715a33b4e8e7558eafbf8666d557eddc2f679985257e8eb8b04f63.png" title="Given como usuario me encuentro logueado en la aplicacion Zero Bank con
+| user | password |
+| username | password |" width="960"/>
+                <img src="62357d9d9b715a33b4e8e7558eafbf8666d557eddc2f679985257e8eb8b04f63.png" title="Iniciar sesion: username, password" width="960"/>
+                <img src="c23766de4b646be06b2a47cd83e547b2201861c03598278338bfaf1a7f7bed38.png" title="Abrir navegador" width="960"/>
+                <img src="723500bc8d8a44141e9b13017ec8e9ea5233ff6dd8f93b52e5f3508845fe7cc5.png" title="Given Me dirijo a la opcion Pay Bills" width="960"/>
+                <img src="scaled_ccfd588756737d1bb3f6165da901c14d613375a876b037db726245da6f587b83.png" title="When Diligencio los datos del formulario &quot;Apple&quot;,&quot;Loan&quot;,&quot;100&quot;,&quot;2021-12-01&quot;,&quot;Pago Factura&quot;" width="960"/>
+                <img src="3a2eea81ec37f94c76ee8e49ecc5bd4819091c036b825edc52c91aadb7d54bf5.png" title="And Presiono la opcion pay" width="960"/>
+                <img src="scaled_7611b469a965640ea34d4f1efbcb1bedf8637cf2a9fa2f8bd174685ffea2cdd8.png" title="Validar pago no exitoso" width="960"/>
+                <img src="62357d9d9b715a33b4e8e7558eafbf8666d557eddc2f679985257e8eb8b04f63.png" title="Given como usuario me encuentro logueado en la aplicacion Zero Bank con
+| user | password |
+| username | password |" width="960"/>
+                <img src="62357d9d9b715a33b4e8e7558eafbf8666d557eddc2f679985257e8eb8b04f63.png" title="Iniciar sesion: username, password" width="960"/>
+                <img src="c23766de4b646be06b2a47cd83e547b2201861c03598278338bfaf1a7f7bed38.png" title="Abrir navegador" width="960"/>
+                <img src="723500bc8d8a44141e9b13017ec8e9ea5233ff6dd8f93b52e5f3508845fe7cc5.png" title="Given Me dirijo a la opcion Pay Bills" width="960"/>
+                <img src="scaled_d8a654a997faa17189aea061f7b9444d14cae0f51793f60a5065da27d8077771.png" title="When Diligencio los datos del formulario &quot;Apple&quot;,&quot;Brokerage&quot;,&quot;100&quot;,&quot;2021-12-03&quot;,&quot;Pago Factura&quot;" width="960"/>
+                <img src="7611b469a965640ea34d4f1efbcb1bedf8637cf2a9fa2f8bd174685ffea2cdd8.png" title="And Presiono la opcion pay" width="960"/>
+                <img src="7611b469a965640ea34d4f1efbcb1bedf8637cf2a9fa2f8bd174685ffea2cdd8.png" title="Validar pago no exitoso: <span class='failing-color'>FAILURE</span>" width="960"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 1.5.1</span>
+</div>
+</body>
+</html>

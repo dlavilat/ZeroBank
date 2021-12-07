@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="2" name="Transferencia de dinero" skipped="0" tests="3" time="58.9" timestamp="2021-12-06T10:59:05.142-05:00[America/Bogota]"><testcase name="Cuenta de origen con saldo y el monto a enviar sea positivo"/><testcase name="Cuenta de origen con saldo y el monto a enviar sea negativo"><failure message="expected:&lt;...oney &amp; Make Payments[]&gt; but was:&lt;...oney &amp; Make Payments[ - Verify]&gt;" type="java.lang.AssertionError">expected:&lt;...oney &amp; Make Payments[]&gt; but was:&lt;...oney &amp; Make Payments[ - Verify]&gt;</failure><system-err>expected:&lt;...oney &amp; Make Payments[]&gt; but was:&lt;...oney &amp; Make Payments[ - Verify]&gt;&#13;
-com.choucair.formacion.pageobjects.transfer.TransferMoneyPage.validarPage(TransferMoneyPage.java:69)&#13;
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="2" name="Transferencia de dinero" skipped="0" tests="3" time="48.79" timestamp="2021-12-06T17:48:46.966-05:00[America/Bogota]"><testcase name="Cuenta de origen con saldo y el monto a enviar sea positivo"/><testcase name="Cuenta de origen con saldo y el monto a enviar sea negativo"><failure message="expected:&lt;...oney &amp; Make Payments[]&gt; but was:&lt;...oney &amp; Make Payments[ - Verify]&gt;" type="java.lang.AssertionError">expected:&lt;...oney &amp; Make Payments[]&gt; but was:&lt;...oney &amp; Make Payments[ - Verify]&gt;</failure><system-err>expected:&lt;...oney &amp; Make Payments[]&gt; but was:&lt;...oney &amp; Make Payments[ - Verify]&gt;&#13;
+com.choucair.formacion.pageobjects.transfer.TransferMoneyPage.validarPage(TransferMoneyPage.java:57)&#13;
 com.choucair.formacion.steps.transfer.TransferMoneySteps.validarPageTransfer(TransferMoneySteps.java:49)&#13;
 com.choucair.formacion.definition.TransferMoneyDefinition.no_se_envia_a_verificacion(TransferMoneyDefinition.java:56)&#13;
-✽.Then No se envia a verificacion(src/test/resources/features/TransferMoney/transferMoney.feature:32)&#13;
+✽.Then No se envia a verificacion(src/test/resources/features/TransferMoney/transferMoney.feature:31)&#13;
 </system-err></testcase><testcase name="Cuenta de origen con saldo y el monto a enviar sea 0"><failure message="expected:&lt;...oney &amp; Make Payments[]&gt; but was:&lt;...oney &amp; Make Payments[ - Verify]&gt;" type="java.lang.AssertionError">expected:&lt;...oney &amp; Make Payments[]&gt; but was:&lt;...oney &amp; Make Payments[ - Verify]&gt;</failure><system-err>expected:&lt;...oney &amp; Make Payments[]&gt; but was:&lt;...oney &amp; Make Payments[ - Verify]&gt;&#13;
-com.choucair.formacion.pageobjects.transfer.TransferMoneyPage.validarPage(TransferMoneyPage.java:69)&#13;
+com.choucair.formacion.pageobjects.transfer.TransferMoneyPage.validarPage(TransferMoneyPage.java:57)&#13;
 com.choucair.formacion.steps.transfer.TransferMoneySteps.validarPageTransfer(TransferMoneySteps.java:49)&#13;
 com.choucair.formacion.definition.TransferMoneyDefinition.no_se_envia_a_verificacion(TransferMoneyDefinition.java:56)&#13;
-✽.Then No se envia a verificacion(src/test/resources/features/TransferMoney/transferMoney.feature:44)&#13;
+✽.Then No se envia a verificacion(src/test/resources/features/TransferMoney/transferMoney.feature:43)&#13;
 </system-err></testcase></testsuite>

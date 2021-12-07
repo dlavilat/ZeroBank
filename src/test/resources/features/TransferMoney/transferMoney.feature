@@ -5,8 +5,7 @@
 Feature: Transferencia de dinero
   Como usuario puedo realizar transferencias y pagos desde cualquiera de mis cuentas
   
-  Background: 
-  	#Given como usuario me encuentro logueado en la aplicacion Zero Bank con user "username" y password "password"
+  Background:   	
   	Given como usuario me encuentro logueado en la aplicacion Zero Bank con 
   	|user| password |
   	|username|password|
