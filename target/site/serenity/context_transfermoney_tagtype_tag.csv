@@ -1,5 +1,5 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
 "Transferencia de dinero","Cuenta de origen con saldo y monto a enviar positivo","SUCCESS","09:20:24","0.0","9.26"
-"Transferencia de dinero","Cuenta de origen con saldo y el monto a enviar sea positivo","SUCCESS","10:59:05","0.0","38.42"
-"Transferencia de dinero","Cuenta de origen con saldo y el monto a enviar sea negativo","FAILURE","10:59:44","0.0","11.7"
-"Transferencia de dinero","Cuenta de origen con saldo y el monto a enviar sea 0","FAILURE","10:59:56","0.0","8.78"
+"Transferencia de dinero","Cuenta de origen con saldo y el monto a enviar sea positivo","SUCCESS","17:48:46","0.0","19.99"
+"Transferencia de dinero","Cuenta de origen con saldo y el monto a enviar sea negativo","FAILURE","17:49:08","0.0","13.96"
+"Transferencia de dinero","Cuenta de origen con saldo y el monto a enviar sea 0","FAILURE","17:49:22","0.0","14.83"

@@ -1,2 +1,2 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Realizar pagos a los beneficiarios","Pagar un monto superior al que tiene disponible la cuenta","SUCCESS","14:56:13","0.0","6.62"
+"Realizar pagos a los beneficiarios","Pagar un monto menor o igual al que tiene disponible la cuenta","SUCCESS","08:21:05","0.0","9.33"

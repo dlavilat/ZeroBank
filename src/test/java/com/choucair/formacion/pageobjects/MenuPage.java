@@ -16,11 +16,18 @@ public class MenuPage extends PageObject{
 	@FindBy(id="pay_bills_tab")
 	public WebElementFacade lstPayBills;
 	
+	@FindBy(xpath="//*[@id=\"tabs\"]/ul/li[2]")
+	public WebElementFacade lstNewPayee;
+	
 	public void clicTransfer() {
 		lstTransferFunds.click();
 	}
 	
 	public void clicPayBills() {
 		lstPayBills.click();
+	}
+	
+	public void clicNewPayee() {
+		lstNewPayee.click();
 	}
 }

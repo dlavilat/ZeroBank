@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Crear un nuevo Beneficiario" skipped="0" tests="1" time="11.66" timestamp="2021-12-07T11:35:52.601-05:00[America/Bogota]"><testcase name="Diligenciar formulario de creación incorrectamente"><failure type="java.lang.AssertionError"/><system-err>null&#13;
+com.choucair.formacion.pageobjects.payBills.PayeePage.validarDivNoExitoso(PayeePage.java:70)&#13;
+com.choucair.formacion.steps.payBills.PayeeSteps.validarCreacionNoExitoso(PayeeSteps.java:29)&#13;
+com.choucair.formacion.definition.PayeeDefinition.no_se_crea_el_nuevo_beneficiario(PayeeDefinition.java:37)&#13;
+org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)&#13;
+org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)&#13;
+</system-err></testcase></testsuite>

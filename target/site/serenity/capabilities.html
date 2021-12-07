@@ -51,9 +51,9 @@
         var plot1 = $.jqplot('coverage_pie_chart', [
             [
                 ['Passing', 1],
-                ['Pending', 1],
+                ['Pending', 0],
                 ['Ignored', 0],
-                ['Failing', 1],
+                ['Failing', 3],
                 ['Errors',  0],
                 ['Compromised',  0],
                 ['Untested',  0],
@@ -84,9 +84,9 @@
             },
             series: [
                 {label: '1 requirements tested successfully'},
-                {label: '1 requirements pending'},
+                {label: '0 requirements pending'},
                 {label: '0} requirements skipped'},
-                {label: '1} requirements with failures'},
+                {label: '3} requirements with failures'},
                 {label: '0} requirements with errors'},
                 {label: '0} requirements compromised'},
                 {label: '0} requirements untested'},
@@ -214,24 +214,24 @@
                                         <td class="summary-leading-column"><a href="#requirements-tabs">Capabilities</a></td>
                                         <td>3</td>
                                         <td>1</td>
-                                        <td>1</td>
-                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>0</td>
                                         <td>0</td>
                                     </tr>
                                     <tr>
                                         <td class="summary-leading-column"><a href="requirement_type_feature.html">Features</a></td>
+                                        <td>4</td>
+                                        <td>1</td>
                                         <td>3</td>
-                                        <td>1</td>
-                                        <td>1</td>
-                                        <td>1</td>
+                                        <td>0</td>
                                         <td>0</td>
                                     </tr>
 
                                 <tr>
                                     <td class="summary-leading-column"><a href="#test-results-table">Acceptance Criteria (tests)</a></td>
+                                    <td>15</td>
                                     <td>8</td>
-                                    <td>5</td>
-                                    <td>2</td>
+                                    <td>6</td>
                                     <td>1</td>
                                     <td>0</td>
                                     <td></td>
@@ -260,10 +260,10 @@
         <body>
         <tr>
             <td class="summary-leading-column">Automated</td>
-            <td>8</td>
-            <td>5 (62%)</td>
-            <td>2 (25%)</td>
-            <td>1 (12%)</td>
+            <td>15</td>
+            <td>8 (53%)</td>
+            <td>6 (40%)</td>
+            <td>1 (7%)</td>
             <td>0 (0%)</td>
         </tr>
         <tr>
@@ -276,15 +276,15 @@
         </tr>
         <tr>
             <td class="summary-leading-column">Total</td>
-            <td>8</td>
-            <td>5 (62%)</td>
-            <td>2 (25%)</td>
-            <td>1 (12%)</td>
+            <td>15</td>
+            <td>8 (53%)</td>
+            <td>6 (40%)</td>
+            <td>1 (7%)</td>
             <td>0 (0%)</td>
         </tr>
         <tr>
             <td class="summary-leading-column">Total Duration</td>
-                <td colspan="5">1 minutes 52 seconds</td>
+                <td colspan="5">3 minutes 1 seconds</td>
         </tr>
         </body>
     </table>
@@ -534,29 +534,29 @@
                 </tr>
 
 
-                <tr class="test-PENDING requirementRow">
+                <tr class="test-FAILURE requirementRow">
                     <td class="requirementRowCell">
-                        <span class="status_icon"><i class='fa fa-square-o pending-icon ' title='PENDING'></i></span>
-                        <span style="display:none">2</span>
+                        <span class="status_icon"><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></span>
+                        <span style="display:none">3</span>
                     </td>
                     <td class="cardNumber requirementRowCell"></td>
 
-                    <td class="PENDING-text requirementRowCell">
+                    <td class="FAILURE-text requirementRowCell">
                         <a href="javaScript:void(0)" class="read-more-link">
                             <img src="images/plus.png" height="16"/></a>
                         <span class="requirementName"><a
-                                href="capability_pay_saved_payee.html">Pay saved payee</a></span>
+                                href="capability_pay_bills.html">Pay bills</a></span>
 
-                        <div class="requirementNarrative read-more-text">Pay saved payee</div>
+                        <div class="requirementNarrative read-more-text">Pay bills</div>
                     </td>
 
-                        <td class="bluetext requirementRowCell">1</td>
+                        <td class="bluetext requirementRowCell">2</td>
 
-                    <td class="greentext highlighted-value requirementRowCell">2</td>
+                    <td class="greentext highlighted-value requirementRowCell">7</td>
 <!--
-                    <td class="greentext requirementRowCell">1</td>
-                    <td class="bluetext requirementRowCell">1</td>
-                    <td class="redtext requirementRowCell">0</td>
+                    <td class="greentext requirementRowCell">3</td>
+                    <td class="bluetext requirementRowCell">0</td>
+                    <td class="redtext requirementRowCell">4</td>
                     <td class="lightorangetext requirementRowCell">0</td>
                     <td class="violettext requirementRowCell">0</td>
 -->
@@ -574,71 +574,71 @@
 <table>
     <tr>
         <td width="40px">
-            <div class="small">50%</div>
+            <div class="small">42.9%</div>
         </td>
         <td width="125px">
             <div class="percentagebar"
-                 title="  - Total tests: 2
-  - Passing tests: 1 (50%)
-  - Failing tests: 0 (0%)
+                 title="  - Total tests: 7
+  - Passing tests: 3 (42.9%)
+  - Failing tests: 4 (57.1%)
   - Tests with errors: 0 (0%)
   - Compromised tests 0 (0%)
-  - Pending tests: 1 (50%)
+  - Pending tests: 0 (0%)
   - Ignored or skipped tests: 0 (0%)"
                  style="width: 125px;">
                 <div class="pendingbar"
-                     title="  - Total tests: 2
-  - Passing tests: 1 (50%)
-  - Failing tests: 0 (0%)
+                     title="  - Total tests: 7
+  - Passing tests: 3 (42.9%)
+  - Failing tests: 4 (57.1%)
   - Tests with errors: 0 (0%)
   - Compromised tests 0 (0%)
-  - Pending tests: 1 (50%)
+  - Pending tests: 0 (0%)
   - Ignored or skipped tests: 0 (0%)"
                      style="width: 125px;">
                     <div class="ignoredbar"
-                         style="width: 62px;"
-                         title="  - Total tests: 2
-  - Passing tests: 1 (50%)
-  - Failing tests: 0 (0%)
+                         style="width: 125px;"
+                         title="  - Total tests: 7
+  - Passing tests: 3 (42.9%)
+  - Failing tests: 4 (57.1%)
   - Tests with errors: 0 (0%)
   - Compromised tests 0 (0%)
-  - Pending tests: 1 (50%)
+  - Pending tests: 0 (0%)
   - Ignored or skipped tests: 0 (0%)">
                         <div class="compromisedbar"
-                             style="width: 62px;"
-                             title="  - Total tests: 2
-  - Passing tests: 1 (50%)
-  - Failing tests: 0 (0%)
+                             style="width: 125px;"
+                             title="  - Total tests: 7
+  - Passing tests: 3 (42.9%)
+  - Failing tests: 4 (57.1%)
   - Tests with errors: 0 (0%)
   - Compromised tests 0 (0%)
-  - Pending tests: 1 (50%)
+  - Pending tests: 0 (0%)
   - Ignored or skipped tests: 0 (0%)">
                             <div class="errorbar"
-                                 style="width: 62px;"
-                                 title="  - Total tests: 2
-  - Passing tests: 1 (50%)
-  - Failing tests: 0 (0%)
+                                 style="width: 125px;"
+                                 title="  - Total tests: 7
+  - Passing tests: 3 (42.9%)
+  - Failing tests: 4 (57.1%)
   - Tests with errors: 0 (0%)
   - Compromised tests 0 (0%)
-  - Pending tests: 1 (50%)
+  - Pending tests: 0 (0%)
   - Ignored or skipped tests: 0 (0%)">
                                 <div class="failingbar"
-                                     style="width: 62px;"
-                                     title="  - Total tests: 2
-  - Passing tests: 1 (50%)
-  - Failing tests: 0 (0%)
+                                     style="width: 125px;"
+                                     title="  - Total tests: 7
+  - Passing tests: 3 (42.9%)
+  - Failing tests: 4 (57.1%)
   - Tests with errors: 0 (0%)
   - Compromised tests 0 (0%)
-  - Pending tests: 1 (50%)
+  - Pending tests: 0 (0%)
   - Ignored or skipped tests: 0 (0%)">
                                     <div class="passingbar"
-                                         style="width: 62px;"
-                                         title="  - Total tests: 2
-  - Passing tests: 1 (50%)
-  - Failing tests: 0 (0%)
+                                         style="width: 54px;"
+                                         title="  - Total tests: 7
+  - Passing tests: 3 (42.9%)
+  - Failing tests: 4 (57.1%)
   - Tests with errors: 0 (0%)
   - Compromised tests 0 (0%)
-  - Pending tests: 1 (50%)
+  - Pending tests: 0 (0%)
   - Ignored or skipped tests: 0 (0%)">
                                     </div>
                                 </div>
@@ -662,73 +662,73 @@
         </td>
         <td width="125px">
             <div class="percentagebar"
-                 title="Pay saved payee:
+                 title="Pay bills:
   - Passing Features: 0 (0%
-  - Features Failing: 0 (0%
+  - Features Failing: 2 (100%
   - Features Failing with errors: 0
   - Compromised Features: 0
-  - Pending Features: 1
+  - Pending Features: 0
   - Ignored or skipped Features: 0
   - Untested Features: 0 (0%"
                  style="width: 125px;">
                 <div class="pendingbar"
-                     title="Pay saved payee:
+                     title="Pay bills:
   - Passing Features: 0 (0%
-  - Features Failing: 0 (0%
+  - Features Failing: 2 (100%
   - Features Failing with errors: 0
   - Compromised Features: 0
-  - Pending Features: 1
+  - Pending Features: 0
   - Ignored or skipped Features: 0
   - Untested Features: 0 (0%"
                      style="width: 125px;">
                     <div class="ignoredbar"
-                         style="width: 0px;"
-                         title="Pay saved payee:
+                         style="width: 125px;"
+                         title="Pay bills:
   - Passing Features: 0 (0%
-  - Features Failing: 0 (0%
+  - Features Failing: 2 (100%
   - Features Failing with errors: 0
   - Compromised Features: 0
-  - Pending Features: 1
+  - Pending Features: 0
   - Ignored or skipped Features: 0
   - Untested Features: 0 (0%">
                         <div class="compromisedbar"
-                             style="width: 0px;"
-                             title="Pay saved payee:
+                             style="width: 125px;"
+                             title="Pay bills:
   - Passing Features: 0 (0%
-  - Features Failing: 0 (0%
+  - Features Failing: 2 (100%
   - Features Failing with errors: 0
   - Compromised Features: 0
-  - Pending Features: 1
+  - Pending Features: 0
   - Ignored or skipped Features: 0
   - Untested Features: 0 (0%">
                             <div class="errorbar"
-                                 style="width: 0px;"
-                                 title="Pay saved payee:
+                                 style="width: 125px;"
+                                 title="Pay bills:
   - Passing Features: 0 (0%
-  - Features Failing: 0 (0%
+  - Features Failing: 2 (100%
   - Features Failing with errors: 0
   - Compromised Features: 0
-  - Pending Features: 1
+  - Pending Features: 0
   - Ignored or skipped Features: 0
   - Untested Features: 0 (0%">
                                 <div class="failingbar"
-                                     style="width: 0px;"
-                                     title="Pay saved payee:
+                                     style="width: 125px;"
+                                     title="Pay bills:
   - Passing Features: 0 (0%
-  - Features Failing: 0 (0%
+  - Features Failing: 2 (100%
   - Features Failing with errors: 0
   - Compromised Features: 0
-  - Pending Features: 1
+  - Pending Features: 0
   - Ignored or skipped Features: 0
   - Untested Features: 0 (0%">
                                     <div class="passingbar"
                                          style="width: 0px;"
-                                         title="Pay saved payee:
+                                         title="Pay bills:
   - Passing Features: 0 (0%
-  - Features Failing: 0 (0%
+  - Features Failing: 2 (100%
   - Features Failing with errors: 0
   - Compromised Features: 0
-  - Pending Features: 1
+  - Pending Features: 0
   - Ignored or skipped Features: 0
   - Untested Features: 0 (0%">
                                     </div>
@@ -1026,6 +1026,144 @@
                                 <td class="SUCCESS-text">23.64</td>
                             </tr>
 
+                            <tr class="test-FAILURE">
+                                <td><span class="summary-icon"><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></span>
+                                    
+                                    <span style="display:none">FAILURE</span></td>
+                                <td class="FAILURE-text">
+                                    <div class="ellipsis">
+
+                                        <a href="realizar-pagos-a-los-beneficiarios_pagar-un-monto-superior-al-que-tiene-disponible-la-cuenta__2.html" class="ellipsis"
+                                           title="Pagar un monto superior al que tiene disponible la cuenta Assertion error: Values should be dif...">
+                                            Pagar un monto superior al que tiene disponible la cuenta&nbsp;(1  examples)
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="FAILURE-text">9</td>
+
+
+                                <td class="FAILURE-text" data-sort="2021-12-07 11:41:35">11:41:35</td>
+
+                                <td class="FAILURE-text">11.18</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+
+                                        <a href="realizar-pagos-a-los-beneficiarios_pagar-un-monto-menor-o-igual-al-que-tiene-disponible-la-cuenta-con-fecha-actual__2.html" class="ellipsis"
+                                           title="Pagar un monto menor o igual al que tiene disponible la cuenta con fecha actual ">
+                                            Pagar un monto menor o igual al que tiene disponible la cuenta con fecha actual&nbsp;(1  examples)
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="SUCCESS-text">8</td>
+
+
+                                <td class="SUCCESS-text" data-sort="2021-12-07 11:41:48">11:41:48</td>
+
+                                <td class="SUCCESS-text">10.39</td>
+                            </tr>
+
+                            <tr class="test-FAILURE">
+                                <td><span class="summary-icon"><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></span>
+                                    
+                                    <span style="display:none">FAILURE</span></td>
+                                <td class="FAILURE-text">
+                                    <div class="ellipsis">
+
+                                        <a href="realizar-pagos-a-los-beneficiarios_pagar-un-monto-menor-o-igual-al-que-tiene-disponible-la-cuenta-con-fecha-pasada__2.html" class="ellipsis"
+                                           title="Pagar un monto menor o igual al que tiene disponible la cuenta con fecha pasada Assertion error: Values should be dif...">
+                                            Pagar un monto menor o igual al que tiene disponible la cuenta con fecha pasada&nbsp;(2  examples)
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="FAILURE-text">18</td>
+
+
+                                <td class="FAILURE-text" data-sort="2021-12-07 11:41:58">11:41:58</td>
+
+                                <td class="FAILURE-text">22.03</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+
+                                        <a href="realizar-pagos-a-los-beneficiarios_pagar-un-monto-menor-o-igual-al-que-tiene-disponible-la-cuenta-con-fecha-futura__2.html" class="ellipsis"
+                                           title="Pagar un monto menor o igual al que tiene disponible la cuenta con fecha futura ">
+                                            Pagar un monto menor o igual al que tiene disponible la cuenta con fecha futura&nbsp;(1  examples)
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="SUCCESS-text">8</td>
+
+
+                                <td class="SUCCESS-text" data-sort="2021-12-07 11:42:21">11:42:21</td>
+
+                                <td class="SUCCESS-text">11.2</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+
+                                        <a href="crear-un-nuevo-beneficiario_diligenciar-formulario-de-creación-correctamente__2.html" class="ellipsis"
+                                           title="Diligenciar formulario de creaci&oacute;n correctamente ">
+                                            Diligenciar formulario de creaci&oacute;n correctamente&nbsp;(1  examples)
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="SUCCESS-text">8</td>
+
+
+                                <td class="SUCCESS-text" data-sort="2021-12-07 11:29:56">11:29:56</td>
+
+                                <td class="SUCCESS-text">10.1</td>
+                            </tr>
+
+                            <tr class="test-FAILURE">
+                                <td><span class="summary-icon"><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></span>
+                                    
+                                    <span style="display:none">FAILURE</span></td>
+                                <td class="FAILURE-text">
+                                    <div class="ellipsis">
+
+                                        <a href="crear-un-nuevo-beneficiario_diligenciar-formulario-de-creación-incorrectamente__2.html" class="ellipsis"
+                                           title="Diligenciar formulario de creaci&oacute;n incorrectamente Assertion error">
+                                            Diligenciar formulario de creaci&oacute;n incorrectamente&nbsp;(1  examples)
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="FAILURE-text">9</td>
+
+
+                                <td class="FAILURE-text" data-sort="2021-12-07 11:35:52">11:35:52</td>
+
+                                <td class="FAILURE-text">11.66</td>
+                            </tr>
+
                             <tr class="test-PENDING">
                                 <td><span class="summary-icon"><i class='fa fa-square-o pending-icon ' title='PENDING'></i></span>
                                     
@@ -1056,9 +1194,9 @@
                                 <td class="SUCCESS-text">
                                     <div class="ellipsis">
 
-                                        <a href="realizar-pagos-a-los-beneficiarios_pagar-un-monto-superior-al-que-tiene-disponible-la-cuenta__2.html" class="ellipsis"
-                                           title="Pagar un monto superior al que tiene disponible la cuenta ">
-                                            Pagar un monto superior al que tiene disponible la cuenta&nbsp;(1  examples)
+                                        <a href="realizar-pagos-a-los-beneficiarios_pagar-un-monto-menor-o-igual-al-que-tiene-disponible-la-cuenta__2.html" class="ellipsis"
+                                           title="Pagar un monto menor o igual al que tiene disponible la cuenta ">
+                                            Pagar un monto menor o igual al que tiene disponible la cuenta&nbsp;(1  examples)
                                                 <span class="related-issue-title"></span>
                                         </a>
                                     </div>
@@ -1067,9 +1205,9 @@
                                 <td class="SUCCESS-text">8</td>
 
 
-                                <td class="SUCCESS-text" data-sort="2021-12-06 14:56:13">14:56:13</td>
+                                <td class="SUCCESS-text" data-sort="2021-12-07 08:21:05">08:21:05</td>
 
-                                <td class="SUCCESS-text">6.62</td>
+                                <td class="SUCCESS-text">9.33</td>
                             </tr>
 
                             <tr class="test-SUCCESS">
@@ -1113,9 +1251,9 @@
                                 <td class="SUCCESS-text">14</td>
 
 
-                                <td class="SUCCESS-text" data-sort="2021-12-06 10:59:05">10:59:05</td>
+                                <td class="SUCCESS-text" data-sort="2021-12-06 17:48:46">17:48:46</td>
 
-                                <td class="SUCCESS-text">38.42</td>
+                                <td class="SUCCESS-text">19.99</td>
                             </tr>
 
                             <tr class="test-FAILURE">
@@ -1136,9 +1274,9 @@
                                 <td class="FAILURE-text">12</td>
 
 
-                                <td class="FAILURE-text" data-sort="2021-12-06 10:59:44">10:59:44</td>
+                                <td class="FAILURE-text" data-sort="2021-12-06 17:49:08">17:49:08</td>
 
-                                <td class="FAILURE-text">11.7</td>
+                                <td class="FAILURE-text">13.96</td>
                             </tr>
 
                             <tr class="test-FAILURE">
@@ -1159,9 +1297,9 @@
                                 <td class="FAILURE-text">12</td>
 
 
-                                <td class="FAILURE-text" data-sort="2021-12-06 10:59:56">10:59:56</td>
+                                <td class="FAILURE-text" data-sort="2021-12-06 17:49:22">17:49:22</td>
 
-                                <td class="FAILURE-text">8.78</td>
+                                <td class="FAILURE-text">14.83</td>
                             </tr>
                         </tbody>
                     </table>

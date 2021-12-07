@@ -1,2 +1,5 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Transferencia de dinero","Cuenta de origen con saldo y el monto a enviar sea negativo","FAILURE","10:59:44","0.0","11.7"
+"Realizar pagos a los beneficiarios","Pagar un monto menor o igual al que tiene disponible la cuenta con fecha actual","SUCCESS","11:41:48","0.0","10.39"
+"Crear un nuevo Beneficiario","Diligenciar formulario de creación incorrectamente","FAILURE","11:35:52","0.0","11.66"
+"Realizar pagos a los beneficiarios","Pagar un monto menor o igual al que tiene disponible la cuenta","SUCCESS","08:21:05","0.0","9.33"
+"Transferencia de dinero","Cuenta de origen con saldo y el monto a enviar sea negativo","FAILURE","17:49:08","0.0","13.96"
