@@ -1,4 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"Realizar pagos a los beneficiarios","Pagar un monto superior al que tiene disponible la cuenta","FAILURE","11:41:35","0.0","11.18"
-"Realizar pagos a los beneficiarios","Pagar un monto menor o igual al que tiene disponible la cuenta con fecha pasada","FAILURE","11:41:58","0.0","22.03"
-"Crear un nuevo Beneficiario","Diligenciar formulario de creación incorrectamente","FAILURE","11:35:52","0.0","11.66"

@@ -1,1 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Realizar pagos a los beneficiarios" skipped="0" tests="1" time="9.26" timestamp="2021-12-07T08:46:48.444-05:00[America/Bogota]"><testcase name="Pagar un monto menor o igual al que tiene disponible la cuenta con fecha futura"/></testsuite>

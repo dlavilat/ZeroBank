@@ -1,6 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"Realizar pagos a los beneficiarios","Pagar un monto superior al que tiene disponible la cuenta","FAILURE","11:41:35","0.0","11.18"
-"Crear un nuevo Beneficiario","Diligenciar formulario de creación correctamente","SUCCESS","11:29:56","0.0","10.1"
-"Realizar pagos a los beneficiarios","Pagar un monto superior al que tiene disponible la cuenta","PENDING","14:20:44","0.0","7.13"
-"Transferencia de dinero","Cuenta de origen con saldo y monto a enviar positivo","SUCCESS","09:20:24","0.0","9.26"
-"Transferencia de dinero","Cuenta de origen con saldo y el monto a enviar sea positivo","SUCCESS","17:48:46","0.0","19.99"
