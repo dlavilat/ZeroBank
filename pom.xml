@@ -19,7 +19,7 @@
 	</properties>
 
 	<!-- Define the Bintray repos for convenience -->
-	<repositories>
+<!-- 	<repositories>
 		<repository>
 			<id>serenity</id>
 			<name>bintray</name>
@@ -32,7 +32,7 @@
 			<name>bintray-plugins</name>
 			<url>http://dl.bintray.com/serenity/maven</url>
 		</pluginRepository>
-	</pluginRepositories>
+	</pluginRepositories> -->
 
 	<dependencies>
 		<dependency>
