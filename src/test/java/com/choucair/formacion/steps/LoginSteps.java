@@ -24,11 +24,6 @@ public class LoginSteps {
 	}
 	
 	@Step
-	public void darPermisosNavegador() {
-		loginPage.confirmarOpcAvanzado();	
-	}
-	
-	@Step
 	public void verificarIngreso() {
 		loginPage.verificarIngreso();
 	}

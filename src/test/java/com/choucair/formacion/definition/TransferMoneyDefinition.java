@@ -5,10 +5,10 @@ import java.util.List;
 import com.choucair.formacion.steps.LoginSteps;
 import com.choucair.formacion.steps.transfer.TransferMoneySteps;
 
-import cucumber.api.DataTable;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+import io.cucumber.datatable.DataTable;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import net.thucydides.core.annotations.Steps;
 
 public class TransferMoneyDefinition {
@@ -21,7 +21,7 @@ public class TransferMoneyDefinition {
 	
 	@Given("^como usuario me encuentro logueado en la aplicacion Zero Bank con$")
 	public void como_usuario_me_encuentro_logueado_en_la_aplicacion_Zero_Bank(DataTable datosSesion) {
-		List<List<String>> data = datosSesion.raw();
+		List<List<String>> data = datosSesion.asLists();
 		loginSteps.iniciarSesion(data.get(1).get(0).toString(), data.get(1).get(1).toString());
 	}
 

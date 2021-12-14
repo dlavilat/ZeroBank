@@ -11,7 +11,6 @@
     Given Estoy en el inicio de la aplicacion ZeroBank
     When Diligencio los campos <login> y <password>
     And Presiono el botón Sign In
-    And Doy permiso de acceso al navegador
     Then El sistema permite el ingreso a la aplicacion
 
     Examples:
@@ -23,7 +22,6 @@
     Given Estoy en el inicio de la aplicacion ZeroBank
     When Diligencio los campos <login> y <password>
     And Presiono el botón Sign In
-    And Doy permiso de acceso al navegador
     Then El sistema no permite el ingreso a la aplicacion
 
     Examples:

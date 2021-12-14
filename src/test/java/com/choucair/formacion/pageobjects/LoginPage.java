@@ -40,13 +40,6 @@ public class LoginPage extends PageObject {
 		btnSignIn.click();		
 	}
 	
-	public void confirmarOpcAvanzado() {
-		if(btnAvanzado.isVisible()) {
-			btnAvanzado.click();
-			lnkContinuar.click();
-		}		
-	}
-	
 	public void verificarIngreso() {
 		String lblTituloPage = "Cash Accounts";
 		String strMensaje = lblTituloHomePage.getText();
@@ -62,7 +55,6 @@ public class LoginPage extends PageObject {
 	public void inicioSesion(String strUser, String strPassword) {
 		ingresarDatos(strUser,strPassword);
 		clicBtnSignIn();
-		confirmarOpcAvanzado();
 		verificarIngreso();
 	}
 	

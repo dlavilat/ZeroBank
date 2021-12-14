@@ -2,9 +2,9 @@ package com.choucair.formacion.definition;
 
 import com.choucair.formacion.steps.LoginSteps;
 
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import net.thucydides.core.annotations.Steps;
 
 public class LoginDefinition {
@@ -25,11 +25,6 @@ public class LoginDefinition {
 	@When("^Presiono el botón Sign In$")
 	public void presiono_el_botón_Sign_In() {
 		loginSteps.ingresar();
-	}
-	
-	@When("^Doy permiso de acceso al navegador$")
-	public void doy_permiso_de_accesp_al_navegador() {
-		loginSteps.darPermisosNavegador();
 	}
 
 	@Then("^El sistema permite el ingreso a la aplicacion$")

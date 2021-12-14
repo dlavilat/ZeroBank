@@ -4,9 +4,9 @@ package com.choucair.formacion.definition;
 import com.choucair.formacion.steps.LoginSteps;
 import com.choucair.formacion.steps.payBills.PayBillsSteps;
 
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import net.thucydides.core.annotations.Steps;
 
 public class PayBillsDefinition {
