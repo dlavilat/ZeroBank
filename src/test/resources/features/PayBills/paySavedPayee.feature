@@ -32,7 +32,7 @@ Feature: Realizar pagos a los beneficiarios
     
     Examples:
     | payee	| account| amount | date				| description		|
-    |"Apple"| "Loan" | "400"	| "2021-12-07"| "Pago Factura"|
+    |"Apple"| "Loan" | "400"	| "2021-12-16"| "Pago Factura"|
     
 
   @Caso3
@@ -57,7 +57,7 @@ Feature: Realizar pagos a los beneficiarios
     
     Examples:
     | payee	| account| amount | date				| description		|
-    |"Apple"| "Loan" | "150"	| "2021-12-15"| "Pago Factura"|
+    |"Apple"| "Loan" | "150"	| "2021-12-30"| "Pago Factura"|
     
 
 
